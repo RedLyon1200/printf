@@ -1,7 +1,7 @@
+#include <stdarg.h>
+#include <stdlib.h>
 #ifndef F
 #define F
 
-test gay 
-
-
-#endif
+int _printf(const char *format, ...);
+#endif /* Printf */
