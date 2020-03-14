@@ -1,7 +1,7 @@
 #ifndef F
 #define F
 
-test
+test gay 
 
 quiere nepe?
 #endif
