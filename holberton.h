@@ -6,6 +6,15 @@
 <<<<<<< HEAD
 int _printf(const char *format, ...);
 #endif /* Printf */
-=======
+=======s
+ddskvkaslds
+vkvs
+dvsdjvdsds
+vs
+v
+df
+sd
+fsd
+f
 #endif
 >>>>>>> f82e2d9d127e07bd7e819b75e8558e16db9d64eb
