@@ -1,11 +1,21 @@
-#include <stdarg.h>
-#include <stdlib.h>
 #ifndef F
 #define F
 
-<<<<<<< HEAD
+/**
+ * struct print - struct for conversion specifiers
+ * @print: struct print
+ * @p: print function specified
+ */
+typedef struct print
+{
+	char *print;
+	int (*p)();
+} print_t;
+
+
+
+
+
+
 int _printf(const char *format, ...);
 #endif /* Printf */
-=======
-#endif
->>>>>>> f82e2d9d127e07bd7e819b75e8558e16db9d64eb
