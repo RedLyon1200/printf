@@ -3,12 +3,12 @@
 #include <stdarg.h>
 
 /**
- * o_char - prints the character c
+ * print_c - prints the character c
  * @arg: character to print
  *
  * Return: number of characters printed
  */
-int o_char(va_list arg)
+int print_c(va_list arg)
 {
 	char c;
 
@@ -18,21 +18,29 @@ int o_char(va_list arg)
 	return (1);
 }
 
-/**
- * o_str - function to print a array of strings
- * @args: va_list arguments
- * Return: Always
- */
-int o_str(va_list arg)
-{
-	char *str = va_arg(arg, char *);
-	int x;
 
-	if (str == NULL)
-		return (NULL);
-	for (x = 0; str[x] != '\0'; x++)
+/**
+ * p_str - prints string s
+ * @arg: string to print
+ * Return: number of characters printed
+ */
+int p_str(va_list arg)
+{
+	unsigned int i;
+	char *s;
+
+	s = va_arg(arg, char *);
+
+	i = 0;
+
+	if (s == NULL)
+		s = "(null)";
+
+	while (s[i] != '\0')
 	{
-		x = _putchar(str[x]);
+		_putchar(s[i]);
+		i++;
 	}
-	return (x);
+
+	return (i);
 }
